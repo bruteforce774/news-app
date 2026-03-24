@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <p v-for="item in newsStore.newsItems">
+  <p v-for="item in newsStore.newsItems" :key="item.url">
     {{ item.title }}
   </p>
 </template>
