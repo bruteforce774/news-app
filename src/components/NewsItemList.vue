@@ -7,12 +7,10 @@
   onMounted(async () => {
     await newsStore.fetchItems('Iran')
   })
-
-  const newsItems = newsStore.newsItems
 </script>
 
 <template>
-  <p v-for="item in newsItems">
+  <p v-for="item in newsStore.newsItems">
     {{ item.title }}
   </p>
 </template>
